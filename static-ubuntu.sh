@@ -21,5 +21,7 @@ sudo a2enmod expires
 sudo a2enmod headers
 sudo systemctl restart apache2
 
+sudo apt install -y mailutils
+
 # sudo certbot --apache
 # apps.lrnxp.com
