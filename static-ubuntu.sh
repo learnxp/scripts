@@ -21,9 +21,11 @@ sudo a2enmod expires
 sudo a2enmod headers
 sudo systemctl restart apache2
 
-sudo apt install -y mailutils
-
 # sudo certbot --apache
 # apps.lrnxp.com
 # sudo vi /etc/hostname apps.xyz.com
 # sudo hostname apps.xyz.com
+
+# for outbound mail
+# sudo apt install -y mailutils
+# if you need to reconfigure postfix: sudo dpkg-reconfigure postfix
