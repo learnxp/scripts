@@ -39,3 +39,7 @@ sudo systemctl restart apache2
 # sudo apt install -y mailutils
 #   Internet Site
 # if you need to reconfigure postfix: sudo dpkg-reconfigure postfix
+
+# git config --global user.name "Charles R. Severance"
+# git config --global user.email "csev@umich.edu"
+# git config --global core.editor "vim"
