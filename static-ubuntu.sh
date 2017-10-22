@@ -29,9 +29,13 @@ sudo systemctl restart apache2
 # apache2ctl configtest
 # apache2ctl -S
 
+# For SSL
 # sudo certbot --apache
 #   Need to enter email
 #   Need to enter domain name
+# https://www.ssllabs.com/ssltest/analyze.html?d=xyz.org
+
 # for outbound mail
 # sudo apt install -y mailutils
+#   Internet Site
 # if you need to reconfigure postfix: sudo dpkg-reconfigure postfix
