@@ -6,7 +6,7 @@ sudo apt-get install -y software-properties-common
 sudo add-apt-repository -y ppa:ondrej/php
 sudo add-apt-repository -y ppa:ondrej/apache2
 sudo add-apt-repository -y ppa:ondrej/mysql-5.6
-sudo add-apt-repository ppa:certbot/certbot
+sudo add-apt-repository -y ppa:certbot/certbot
 sudo apt-get update
 
 apt-cache search php7
@@ -21,11 +21,12 @@ sudo a2enmod expires
 sudo a2enmod headers
 sudo systemctl restart apache2
 
-# sudo certbot --apache
-# apps.lrnxp.com
+# Set DNS in Route 53
 # sudo vi /etc/hostname apps.xyz.com
 # sudo hostname apps.xyz.com
+# sudo reboot
 
+# sudo certbot --apache
 # for outbound mail
 # sudo apt install -y mailutils
 # if you need to reconfigure postfix: sudo dpkg-reconfigure postfix
