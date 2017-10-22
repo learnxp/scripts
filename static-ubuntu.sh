@@ -1,6 +1,11 @@
 # Set up an Apache / Mysql for static.lrnxp.net
 # Also used to set up apache for apps.lrnxp.com
 
+# Set DNS in Route 53
+# sudo vi /etc/hostname apps.xyz.com
+# sudo hostname apps.xyz.com
+# sudo reboot
+
 sudo apt-get install -y python-software-properties
 sudo apt-get install -y software-properties-common
 sudo add-apt-repository -y ppa:ondrej/php
@@ -21,12 +26,12 @@ sudo a2enmod expires
 sudo a2enmod headers
 sudo systemctl restart apache2
 
-# Set DNS in Route 53
-# sudo vi /etc/hostname apps.xyz.com
-# sudo hostname apps.xyz.com
-# sudo reboot
+# apache2ctl configtest
+# apache2ctl -S
 
 # sudo certbot --apache
+#   Need to enter email
+#   Need to enter domain name
 # for outbound mail
 # sudo apt install -y mailutils
 # if you need to reconfigure postfix: sudo dpkg-reconfigure postfix
