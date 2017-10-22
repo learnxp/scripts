@@ -25,6 +25,7 @@ sudo apt-get install -y mysql-server
 
 sudo a2enmod expires
 sudo a2enmod headers
+sodo phpenmod mysqlnd pdo_mysql
 sudo systemctl restart apache2
 
 # apache2ctl configtest
