@@ -38,6 +38,9 @@ sudo apt-get install -y python-certbot-apache
 #   Need to enter email
 #   Need to enter domain name
 # https://www.ssllabs.com/ssltest/analyze.html?d=xyz.org
+# sudo certbot --expand -d www.xyz.org
+# https://www.ssllabs.com/ssltest/analyze.html?d=www.xyz.org
+
 
 # for outbound mail
 # sudo apt install -y mailutils
