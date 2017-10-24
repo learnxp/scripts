@@ -18,6 +18,7 @@ apt-cache search php7
 sudo apt-get install -y php7.2
 sudo apt-get install -y apache2
 sudo apt-get install -y libapache2-mod-php7.2 php7.2-mysql php7.2-curl php7.2-json
+sudo apt-get install -y php7.2-mbstring
 sudo apt-get install -y php7.2-apc
 
 # If you want local mysql (not needed for Aurora)
