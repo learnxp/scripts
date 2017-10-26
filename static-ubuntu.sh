@@ -14,13 +14,14 @@ sudo add-apt-repository -y ppa:ondrej/mysql-5.6
 sudo add-apt-repository -y ppa:certbot/certbot
 sudo apt-get update
 
-apt-cache search php7
-sudo apt-get install -y php7.2
 sudo apt-get install -y apache2
-sudo apt-get install -y libapache2-mod-php7.2 php7.2-mysql php7.2-curl php7.2-json
-sudo apt-get install -y php7.2-mbstring php7.2-zip php7.2-xml php7.2-gd
 
-sudo apt-get install -y php7.2-apc
+apt-cache search php7
+
+sudo apt-get install -y php7.1
+sudo apt-get install -y libapache2-mod-php7.1 php7.1-mysql php7.1-curl php7.1-json
+sudo apt-get install -y php7.1-mbstring php7.1-zip php7.1-xml php7.1-gd
+sudo apt-get install -y php7.1-apc
 
 # If you want local mysql (not needed for Aurora)
 sudo apt-get install -y mysql-server
