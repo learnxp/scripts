@@ -29,6 +29,9 @@ sudo apt-get install -y mysql-server
 sudo a2enmod expires
 sudo a2enmod headers
 sudo phpenmod mysqlnd pdo_mysql
+# sudo a2enmod php7.1
+# sudo a2dismod php7.1
+
 # vi /etc/apache2/apache2.conf
 # AllowOverride All
 
