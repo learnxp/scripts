@@ -45,3 +45,6 @@ sudo systemctl restart apache2
 # git config --global user.name "Charles R. Severance"
 # git config --global user.email "csev@umich.edu"
 # git config --global core.editor "vim"
+
+# systemctl poweroff
+
