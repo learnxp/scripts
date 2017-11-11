@@ -1,10 +1,5 @@
-# Set up an Apache / Mysql for static.lrnxp.net
-# Also used to set up apache for apps.lrnxp.com
-
-# Set DNS in Route 53
-# sudo vi /etc/hostname apps.xyz.com
-# sudo hostname apps.xyz.com
-# sudo reboot
+# Setup a salable app server instance behind ELB
+# Leave hostname alone
 
 sudo apt-get install -y python-software-properties
 sudo apt-get install -y software-properties-common
