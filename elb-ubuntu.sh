@@ -13,24 +13,22 @@ sudo apt-get update
 
 sudo apt-get install -y apache2
 
-apt-cache search php7
+# apt-cache search php7
 
 sudo apt-get install -y php7.1
 sudo apt-get install -y libapache2-mod-php7.1 php7.1-mysql php7.1-curl php7.1-json
 sudo apt-get install -y php7.1-mbstring php7.1-zip php7.1-xml php7.1-gd
 sudo apt-get install -y php7.1-apc
 
-# If you want local mysql (not needed for Aurora)
-sudo apt-get install -y mysql-server
+sudo apt-get install -y mysql-client
 
 sudo a2enmod expires
 sudo a2enmod headers
 sudo phpenmod mysqlnd pdo_mysql
-# sudo a2enmod php7.1
-# sudo a2dismod php7.1
 
-# vi /etc/apache2/apache2.conf
-# AllowOverride All
+# sudo vi /etc/apache2/apache2.conf
+# Change: AllowOverride None
+# To: AllowOverride All
 
 sudo systemctl restart apache2
 
