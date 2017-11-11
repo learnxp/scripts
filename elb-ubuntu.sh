@@ -35,21 +35,10 @@ sudo systemctl restart apache2
 # apache2ctl configtest
 # apache2ctl -S
 
-sudo apt install composer
-
-sudo apt-get install -y python-certbot-apache 
-
-# For SSL
-# sudo certbot --apache
-#   Need to enter email
-#   Need to enter domain name
-# https://www.ssllabs.com/ssltest/analyze.html?d=xyz.org
-# sudo certbot --expand -d www.xyz.org
-# https://www.ssllabs.com/ssltest/analyze.html?d=www.xyz.org
-
 # for outbound mail
 # sudo apt install -y mailutils
 #   Internet Site
+#   tsugicloud.org
 # if you need to reconfigure postfix: sudo dpkg-reconfigure postfix
 
 # Git stuff...
