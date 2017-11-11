@@ -1,8 +1,10 @@
 # Setup a salable app server instance behind ELB
 # Leave hostname alone
 
+sudo apt-get update
 sudo apt-get install -y python-software-properties
 sudo apt-get install -y software-properties-common
+
 sudo add-apt-repository -y ppa:ondrej/php
 sudo add-apt-repository -y ppa:ondrej/apache2
 sudo add-apt-repository -y ppa:ondrej/mysql-5.6
