@@ -19,12 +19,13 @@ sudo apt-get install -y php7.1
 sudo apt-get install -y libapache2-mod-php7.1 php7.1-mysql php7.1-curl php7.1-json
 sudo apt-get install -y php7.1-mbstring php7.1-zip php7.1-xml php7.1-gd
 sudo apt-get install -y php7.1-apc
+sudo apt-get install -y php7.1-intl
 
 sudo apt-get install -y mysql-client
 
 sudo a2enmod expires
 sudo a2enmod headers
-sudo phpenmod mysqlnd pdo_mysql
+sudo phpenmod mysqlnd pdo_mysql intl
 
 # sudo vi /etc/apache2/apache2.conf
 # Change: AllowOverride None
