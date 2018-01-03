@@ -31,6 +31,11 @@ sudo phpenmod mysqlnd pdo_mysql intl
 # Change: AllowOverride None
 # To: AllowOverride All
 
+# The OS must know about locales - wow
+# Check using:   locale -a
+# https://stackoverflow.com/questions/23170819/how-to-debug-gettext-not-working-in-php
+sudo locale-gen es de
+
 sudo systemctl restart apache2
 
 # apache2ctl configtest
