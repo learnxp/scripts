@@ -42,6 +42,7 @@ sudo systemctl restart apache2
 
 # apache2ctl configtest
 # apache2ctl -S
+# apachectl -M
 
 # for outbound mail
 # sudo apt install -y mailutils
