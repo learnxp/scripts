@@ -22,6 +22,7 @@ sudo apt-get install -y php7.1-apc
 sudo apt-get install -y php7.1-intl
 
 sudo apt-get install -y mysql-client
+sudo apt-get install nfs-common  # For EFS
 
 sudo a2enmod expires
 sudo a2enmod headers
