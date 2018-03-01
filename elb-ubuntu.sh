@@ -26,6 +26,7 @@ sudo apt-get install -y nfs-common  # For EFS
 
 sudo a2enmod expires
 sudo a2enmod headers
+sudo a2enmod rewrite
 sudo phpenmod mysqlnd pdo_mysql intl
 
 # sudo vi /etc/apache2/apache2.conf
