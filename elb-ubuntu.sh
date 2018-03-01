@@ -1,4 +1,4 @@
-# Setup a salable app server instance behind ELB
+# Setup a scalable app server instance behind ELB
 # Leave hostname alone
 
 sudo apt-get update
